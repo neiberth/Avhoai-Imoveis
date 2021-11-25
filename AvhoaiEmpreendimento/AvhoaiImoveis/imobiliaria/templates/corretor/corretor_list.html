@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="page-header">
+    <h2> <i class="bi bi-person-square"> Lista de Corretores</i> </h2>
+
+    {% if objects_list %}
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">CREA</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for objects in objects_list %}
+                    <tr>
+                      <th scope="row">{{ objects.id }}</th>
+                      <td>
+                          <a href="{% url 'corretor_detail' pk=objects.pk %}">{{ objects.nome }}</a>
+                      </td>
+                      <td>{{ objects.CREA }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p class="alert alert-warning">Não Exite nenhum Corretor Cadastrado</p>
+    {% endif %}
+</div>
+
+{% endblock content %}

@@ -1,0 +1,37 @@
+
+Avhoi Imoveis
+
+Corretor
+ - Nome
+ - Email
+ - Celular 
+ - Telefone
+ - CREA
+
+Imovel
+ - Endereço
+ - Área do Terreno
+ - Área construida
+ - Valor Imove
+ - Valor Aluguel
+ - Valor IPTU
+ - Valor Condominio 
+ - Número quartos
+ - Número suites
+ - Número de banheiros
+ - Número da vagas
+ - Outros Destaques (churrasqueira, Banheira, Piscina, Jacusa)
+ - Observações
+ - Destaque
+ - IdTipo de empreendimento
+ - Idstatus
+ - IdImagnes
+ - IdCorretor
+ 
+Tipo de Empreendimento
+ - Tipo (apartamento, casa, flet, terreno, sala Comercial)
+ 
+Status
+ - Status ( novo, usado, em construção, permuta)
+ 
+
