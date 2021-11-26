@@ -19,7 +19,7 @@ class Corretor(models.Model):
     celular = models.CharField(max_length=20, null=False)
     telefone= models.CharField(max_length=20, null=True)
     CREA    = models.CharField(max_length=30, null=False)
-    foto    = models.ImageField(upload_to='imagem/', null=True, blank=True)
+    foto    = models.ImageField(null=True, blank=True)
 
     class Meta:
         ordering = ('nome', )
@@ -73,7 +73,7 @@ class Status(models.Model):
 
 # _______ Imagens _______
 class imagem(models.Model):
-    imagem = models.ImageField( upload_to='imagem', null=True, blank=True)
+    imagem = models.ImageField( null=True, blank=True)
 
     imovel = models.ForeignKey(Imovel, on_delete=models.CASCADE)
 
